@@ -56,7 +56,7 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1607860108855-64acf2078ed9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -168,6 +168,56 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
+/* Location Section */
+.location {
+    padding: 5rem 1rem;
+    background-color: #f9f9f9;
+}
+
+.location h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+}
+
+.location-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.map-container {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.location-info {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.location-info h3 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+.location-info p {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.location-info i {
+    color: #3498db;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
 /* Contact Section */
 .contact {
     padding: 5rem 1rem;
@@ -241,5 +291,9 @@ footer {
 
     .hero p {
         font-size: 1.2rem;
+    }
+
+    .location-content {
+        grid-template-columns: 1fr;
     }
 } 
