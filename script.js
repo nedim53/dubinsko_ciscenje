@@ -56,4 +56,22 @@ document.querySelectorAll('.service-card, .price-card, .contact-card').forEach(e
 // Add scroll event listener
 window.addEventListener('scroll', animateOnScroll);
 // Run once on load
-animateOnScroll(); 
+animateOnScroll();
+
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    mobileMenuBtn.addEventListener('click', function() {
+        this.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+
+    // Close menu when clicking on a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenuBtn.classList.remove('active');
+            navLinks.classList.remove('active');
+        });
+    });
+}); 
