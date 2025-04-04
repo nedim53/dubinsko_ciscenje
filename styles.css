@@ -31,9 +31,24 @@ nav {
 }
 
 .logo {
-    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo-text {
+    font-size: 2.5rem;
     font-weight: bold;
     color: #2c3e50;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo-subtitle {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-top: -5px;
 }
 
 nav ul {
@@ -55,16 +70,16 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn.prod.website-files.com/63bb8b9cae7aab9703af835b/64102f3b240f067ef1d60c24_63dfd0442ae9b0156dd9e75a_Deep-cleaning-banner.webp');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
-    padding: 0 1rem;
 }
 
 .hero-content {
