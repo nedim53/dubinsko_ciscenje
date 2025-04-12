@@ -80,10 +80,15 @@ nav ul li a:hover {
     justify-content: center;
     text-align: center;
     color: white;
+    padding: 80px 20px;
+    margin-top: 80px;
 }
 
 .hero-content {
     max-width: 800px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
 }
 
 .hero h1 {
